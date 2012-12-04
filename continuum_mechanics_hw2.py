@@ -63,8 +63,10 @@ print '\[ v|_{(x=p_0)} = ', myprinter.doprint( v.subs(pointpt) ), '\]'
 
 print '\n \\textbf{(c)} The acceleration fields:'
 A=V.diff(t)
+print '\[ A(X,t) = ', myprinter.doprint( A ), '\]'
 print '\[ A|_{P_0} = ', myprinter.doprint( A.subs(pointPt) ), '\]'
 a=A.subs(invFIdict)
+print '\[ a(x,t) = ', myprinter.doprint( a ), '\]'
 print '\[ a|_{p_0} = A(\\varphi^{-1}(x,t),t) = ', myprinter.doprint( a.subs(pointpt) ), '\]'
 
 
